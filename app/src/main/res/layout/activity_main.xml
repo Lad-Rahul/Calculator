@@ -3,28 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_centerHorizontal="true"
+    android:layout_marginTop="128dp"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/screen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="24dp"
+        android:layout_marginTop="32dp"
         android:text="0"
         android:textAlignment="textEnd"
-        android:textSize="20dp"
+        android:textSize="24dp"
         />
 
     <EditText
         android:id="@+id/display"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/screen"
         android:textAlignment="textEnd"
         android:layout_marginTop="40dp"
         android:layout_margin="20dp"
-        android:textSize="20dp"
+        android:textSize="24dp"
+        android:layout_below="@id/screen"
         android:inputType="numberDecimal"
         android:text="0" />
 
@@ -34,14 +35,32 @@
         android:layout_height="wrap_content"
         android:weightSum="4"
         android:layout_below="@+id/display"
-        android:layout_margin="10dp"
         >
+
+        <Button
+            android:id="@+id/btn_AC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
+            android:text="AC"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
+            android:layout_weight="2"/>
+
 
         <Button
             android:id="@+id/btn_backspace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="backspace"
+            android:textSize="20dp"
+            android:padding="24dp"
+            android:text="@string/backspace"
             android:layout_weight="1"/>
 
     </LinearLayout>
@@ -52,13 +71,14 @@
         android:layout_height="wrap_content"
         android:weightSum="4"
         android:layout_below="@+id/btn_layer0"
-        android:layout_margin="10dp"
         >
 
         <Button
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btn1"
             android:layout_weight="1"/>
 
@@ -66,6 +86,8 @@
             android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btn2"
             android:layout_weight="1"/>
 
@@ -73,6 +95,8 @@
             android:id="@+id/btn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btn3"
             android:layout_weight="1"/>
 
@@ -80,6 +104,8 @@
             android:id="@+id/btn_plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btnplus"
             android:layout_weight="1"/>
 
@@ -90,13 +116,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="4"
-        android:layout_below="@+id/btn_layer1"
-        android:layout_margin="10dp">
+        android:layout_below="@+id/btn_layer1">
 
         <Button
             android:id="@+id/btn4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btn4"
             android:layout_weight="1"/>
 
@@ -104,6 +131,8 @@
             android:id="@+id/btn5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btn5"
             android:layout_weight="1"/>
 
@@ -111,6 +140,8 @@
             android:id="@+id/btn6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btn6"
             android:layout_weight="1"/>
 
@@ -118,6 +149,8 @@
             android:id="@+id/btn_minus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btnminus"
             android:layout_weight="1"/>
 
@@ -128,13 +161,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="4"
-        android:layout_below="@+id/btn_layer2"
-        android:layout_margin="10dp">
+        android:layout_below="@+id/btn_layer2">
 
         <Button
             android:id="@+id/btn7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btn7"
             android:layout_weight="1"/>
 
@@ -142,6 +176,8 @@
             android:id="@+id/btn8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btn8"
             android:layout_weight="1"/>
 
@@ -149,6 +185,8 @@
             android:id="@+id/btn9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btn9"
             android:layout_weight="1"/>
 
@@ -156,6 +194,8 @@
             android:id="@+id/btn_multi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btnmulti"
             android:layout_weight="1"/>
 
@@ -166,13 +206,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="4"
-        android:layout_below="@+id/btn_layer3"
-        android:layout_margin="10dp">
+        android:layout_below="@+id/btn_layer3">
 
         <Button
             android:id="@+id/btn_dot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btndot"
             android:layout_weight="1"/>
 
@@ -180,31 +221,29 @@
             android:id="@+id/btn0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btn0"
             android:layout_weight="1"/>
 
         <Button
-            android:id="@+id/btn_sign"
+            android:id="@+id/btn_ans"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btnsign"
+            android:textSize="20dp"
+            android:padding="24dp"
+            android:text="@string/btnans"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btn_div"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="24dp"
             android:text="@string/btndiv"
             android:layout_weight="1"/>
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_ans"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_below="@id/btn_layer4"
-        android:text="@string/btnans" />
 
 </RelativeLayout>

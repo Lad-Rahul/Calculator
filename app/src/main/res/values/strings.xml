@@ -17,5 +17,6 @@
     <string name="btndiv">/</string>
     <string name="btnsign">+-</string>
     <string name="btnans">=</string>
+    <string name="backspace">&lt;-</string>
 
 </resources>
